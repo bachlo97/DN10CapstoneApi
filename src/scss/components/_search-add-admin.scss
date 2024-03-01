@@ -1,0 +1,56 @@
+@use "../base/variables" as *;
+@use "../helper/helper" as *;
+
+.search-add {
+    .input_search {
+        align-self: center;
+        .form-control {
+            color: white;
+            &::placeholder {
+                color: whitesmoke;
+            }
+            font-size: 1.5rem;
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                background-color: transparent;
+                border-top: 2px solid $green-2;
+                border-bottom: 2px solid $green-2;
+                border-left: 2px solid $green-2;
+            }
+            &:focus + .input-group-text {
+                color: $color-red-0;
+                background-color: transparent;
+                border-top: 2px solid $green-2;
+                border-bottom: 2px solid $green-2;
+                border-right: 2px solid $green-2;
+                &:hover {
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+            }
+        }
+        .input-group-text {
+            margin-left: calc(2.5px * -1) !important;
+            background-color: $color-gray-1;
+            color: $green-1;
+            border: none;
+            &:hover {
+                color: $color-white-0;
+                background-color: $color-red-0;
+            }
+        }
+    }
+    .btn-themSP {
+        @include button(15px, 10px, white, 1.5rem, 10px, 0px, null, null);
+        background-color: $green-1;
+        &:hover {
+            background-color: $green-2;
+            color: grey;
+        }
+    }
+}
+

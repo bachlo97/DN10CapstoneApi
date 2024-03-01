@@ -1,0 +1,36 @@
+@use "../base/variables" as *;
+//Place holder
+%icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+header {
+    width: 90%;
+    margin: 0px auto;
+    border-bottom: 2px solid $green-1 ;
+    padding: 1rem 0;
+    .header_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_brand {
+            background-image: url(/public/img/logo.svg);
+            height: 8rem;
+            width: 8rem;
+            @extend %icon;
+        }
+
+        .header_back {
+            cursor: pointer;
+            .icon-back {
+                background-image: url(/public/img/back-icon.svg);
+                height: 5rem;
+                width: 5rem;
+                @extend %icon;
+            }
+
+        }
+    }
+}

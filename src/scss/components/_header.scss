@@ -1,0 +1,31 @@
+@use "../base/variables" as *;
+//Place holder
+%icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+header {
+    width: 90%;
+    margin: 0px auto;
+    padding: 1rem 0;
+    .header_content {
+        display: flex;
+        // justify-content: flex-start;
+        align-items: center;
+        .header_brand {
+            background-image: url(/public/img/logo.svg);
+            height: 6rem;
+            width: 6rem;
+            @extend %icon;
+        }
+
+        .header_admin{
+            color: #25bbb2;
+            font-size: 2.5em;
+
+        }
+
+    }
+}
