@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+@use "../helper/helper" as *;
+
+.table{
+    --bs-table-bg: transparent;
+    tr{
+        border: 1px solid;
+    }
+}

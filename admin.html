@@ -56,12 +56,13 @@
                         <th class="column3">IMAGE</th>
                         <th class="column4">
                             <div class="dropdown">
-                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Price
+                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Price
                                 </a>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" id="sx-tang">Sắp xếp tăng dần</a></li>
-                                  <li><a class="dropdown-item" id="sx-giam">Sắp xếp giảm dần</a></li>
+                                    <li><a class="dropdown-item" id="sx-tang">Sắp xếp tăng dần</a></li>
+                                    <li><a class="dropdown-item" id="sx-giam">Sắp xếp giảm dần</a></li>
                                 </ul>
                                 <i class="fa-solid fa-arrow-up mb-1" style="display: none;"></i>
                                 <i class="fa-solid fa-arrow-down mb-1" style="display: none;"></i>
@@ -76,7 +77,7 @@
             </table>
         </div>
         </div>
-        </section>
+    </section>
 
     <!--! FOOTER by devCuong -->
     <!-- <footer></footer> -->
@@ -121,7 +122,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Mô tả</label>
-                            <textarea class="form-control desc" placeholder="chỉ nhập tối đa 50 từ" id="desc" rows="4"></textarea>
+                            <textarea class="form-control desc" placeholder="chỉ nhập tối đa 50 từ" id="desc"
+                                rows="4"></textarea>
                             <div class="d-flex justify-content-between">
                                 <span class="sp-thongbao" id="tb-desc"></span>
                                 <span class="text-end pt-2 count"><span id="wordCount">0</span>/30 từ</span>
@@ -132,12 +134,34 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary fs-5" id="btn-them">Add item</button>
                     <button type="button" class="btn btn-primary fs-5" id="btn-update">Update item</button>
-                    <button type="button" class="btn btn-danger fs-5" id="btn-close" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger fs-5" id="btn-close"
+                        data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="text-center text-lg-start" style="background-color: #67d1be;">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle" style="background-color: #54456b;">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle" style="background-color: #54456b;">
+                <i class="fab fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle" style="background-color: #54456b;">
+                <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle" style="background-color: #54456b;">
+                <i class="fab fa-twitter"></i>
+            </button>
+        </div>
 
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Bootcamp DN10 Capstone API
+        </div>
+        <!-- Copyright -->
+    </footer>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -146,7 +170,9 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Axios API -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js" integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+        integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="module" src="./src/util/admin.js"></script>
 </body>

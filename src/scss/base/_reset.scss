@@ -59,12 +59,7 @@ label,
 legend,
 table,
 caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
+
 article,
 aside,
 canvas,
@@ -136,7 +131,7 @@ table {
 }
 
 img {
-  width: 100%;
+  // width: 100%;
   display: block;
   object-fit: cover;
 }
