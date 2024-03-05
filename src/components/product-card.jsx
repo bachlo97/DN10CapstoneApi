@@ -1,26 +1,29 @@
 import React from 'react'
-
-function ProductCard() {
+function ProductCard({item}) {
     return (
-        <div className="card" style={{ width: '350px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
-            <div className="card-img" style={{ width: '100%', height: '320px', position: 'relative', borderRadius: '10px', overflow: 'hidden' }}>
-                <img src="public/img/product 1.jpg" className="card-img-top" alt="..." style={{ width: '100%', height: '100%' }} />
+        <div className="card">
+            <div className="card-img">
+                <img src={item.img} className="card-img-top" alt="..." />
 
-                <div className="over-lay" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.4)' }}></div>
+                <div className="over-lay"></div>
 
-                <div className="icon" style={{ position: 'absolute', top: 9, right: 14 }}>
-                    <i className="fa-solid fa-heart" style={{ color: '#B197FC' }} />
+                <div className="icon-heart d-flex justify-content-center align-items-center rounded-circle" style={{ position: 'absolute', top: 12, right: 17, width: 30, height: 30, backgroundColor: 'white' }}>
+                    <i className="fa-regular fa-heart" style={{ color: 'red' }}></i>
 
                 </div>
 
             </div>
-            <div className="card-body" style={{ padding: '2rem 3rem 2rem 3rem' }}>
-                <h5 className="card-title d-flex justify-content-between">
-                    <p>Salad</p>
-                    <p>16$</p>
+            <div className="card-body">
+                <h5 className="card-title d-flex justify-content-between mb-3 mt-1">
+                    <p >{item.name}</p>
+                    <p >{item.price}$</p>
                 </h5>
-                <p className="card-text" style={{ fontSize: '14px' }}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <p className="card-text">{item.desc}</p>
+                <button className="btn btn-outline-primary">
+                    <i className="fa-solid fa-cart-shopping"></i>
+                    {" "}Add to cart
+                </button>
+
             </div>
         </div>
 

@@ -1,25 +1,17 @@
 import React from "react";
-
 function Cart() {
   return (
-    <div>
+    <>
       <div
-        className="offcanvas offcanvas-end"
+        className="offcanvas offcanvas-end cart-canvas"
         tabIndex={-1}
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
-        style={{ width: "60%", background: "#90dfaa" }}
       >
         <div className="offcanvas-header">
           <h2
             className="offcanvas-title"
             id="offcanvasRightLabel"
-            style={{
-              marginLeft: "auto",
-              fontSize: "2.5rem",
-              fontWeight: 600,
-              color: "#283f3b",
-            }}
           >
             CART
           </h2>
@@ -46,40 +38,38 @@ function Cart() {
             </thead>
             <tbody className="table-group-divider">
               <tr>
-                <th scope="row">
+                <th scope="row" className="d-flex justify-content-center">
                   <img src="/public/img/product 1.jpg" alt="" width={50} height={50} />
                 </th>
                 <td>Salad</td>
                 <td>
-                  <button>+</button>
+                  <button className="btn btn-outline-secondary rounded-circle fs-4 me-2">+</button>
                   1
-                  <button>-</button>
+                  <button className="btn btn-outline-secondary rounded-circle fs-4 ms-2">-</button>
                 </td>
                 <td>20$</td>
                 <td>20000</td>
-                <td><button>Remove</button></td>
+                <td><i className="fa-solid fa-trash" style={{cursor:'pointer'}}></i></td>
               </tr>
-
+ 
             </tbody>
           </table>
-
-
         </div>
 
 
         <div className="offcanvas-footer">
           <div className="final">
-            <strong>
-              Total: $ <span className="total">400</span>
-            </strong>
+            <p className="mb-3" style={{fontWeight:600}}>
+              SubTotal: $ <span className="total">400</span>
+            </p>
             <div className="action">
-              <button>abc</button>
-              <button>abc</button>
+              <button className="btn btn-outline-primary fs-4 me-5">Purchase <i className="fa-solid fa-money-bill"></i></button>
+              <button className="btn btn-outline-danger fs-4">Remove All <i className="fa-solid fa-broom"></i></button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
