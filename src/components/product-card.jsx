@@ -1,5 +1,5 @@
 import React from 'react'
-function ProductCard({item}) {
+function ProductCard({item,themGioHang}) {
     return (
         <div className="card">
             <div className="card-img">
@@ -19,7 +19,9 @@ function ProductCard({item}) {
                     <p >{item.price}$</p>
                 </h5>
                 <p className="card-text">{item.desc}</p>
-                <button className="btn btn-outline-primary">
+                <button className="btn btn-outline-primary" onClick={()=>{
+                    themGioHang(item)
+                }}>
                     <i className="fa-solid fa-cart-shopping"></i>
                     {" "}Add to cart
                 </button>

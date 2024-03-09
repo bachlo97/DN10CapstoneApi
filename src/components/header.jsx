@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-function Header() {
+function Header({tongSoLuong}) {
 
   useEffect(() => {
     document.querySelector('.btn-menu').onclick = ()=>{
@@ -30,7 +30,7 @@ function Header() {
           <div className="header_cart"  style={{position:'relative'}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" >
             <i className="fa-solid fa-cart-shopping"></i>
             <div className="count d-flex justify-content-center" style={{position: 'absolute',top:'-7px', right:'-9px',backgroundColor:'#496a1a',width:20,height:20,borderRadius:'50%',color:'white'}}>
-              <span>0</span>
+              <span>{tongSoLuong}</span>
             </div>
           </div>
         </div>

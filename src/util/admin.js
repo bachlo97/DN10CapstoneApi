@@ -255,7 +255,6 @@ document.getElementById('search').addEventListener('keyup', () => {
 
 renderProducts();
 
-
 //Validate
 let validationMapper = {
   name: (value) => new Validator(value).require().checkName1().checkName2().checkName3().getMessage(),

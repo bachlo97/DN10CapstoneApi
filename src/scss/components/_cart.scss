@@ -4,6 +4,8 @@
 .offcanvas.cart-canvas {
     width: 60%;
     background: #ddebe2de;
+    // transform: translateX(0);
+    transition: all 0.3s ease-out;
     @include responsive('lg'){
         width: 70%; 
     }
@@ -12,6 +14,9 @@
     }
     @include responsive('sm'){
         width: 100%; 
+    }
+    &.hide-cart{
+        transform: translateX(100%);
     }
     .offcanvas-header {
         h2 {
@@ -41,7 +46,7 @@
             thead {
                 background-color: #c3cec7;
                 position: sticky;
-                top: -10px;
+                top: 0px;
                 z-index: 10;
                 border: 1px solid;
                 text-align: center;
